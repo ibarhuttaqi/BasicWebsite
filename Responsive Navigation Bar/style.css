@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: lightskyblue;
+    /* padding: 10px; */
+    height: 50px;
+    align-items: center;
+    
+}
+nav .logo {
+    /* background-color: blue; */
+    font-family: 'Pacifico';
+    /* max-margin-right: 300px; */
+    color: azure;
+    filter:drop-shadow(2px 2px 2px rgba(0, 0, 0, .5)) ;
+    letter-spacing: 2px;
+    padding: 10px;
+    margin-left: 5px;
+}
+nav ul {
+    display: flex;
+    width: 40%;
+    /* margin-right: 50px; */
+    /* background-color: black; */
+    justify-content: space-evenly;
+}
+nav ul li {
+    list-style: none;
+    
+    /* padding: 10px; */
+}
+nav ul li a{
+    /* font-family: 'Montserrat'; */
+    text-decoration: none;
+    filter:drop-shadow(1px 1px 1px rgba(0, 0, 0, .5));
+    font-size: 0.8em;
+    
+}
+nav ul li a:hover{
+    color: rgba(255 255, 255, .5);
+    filter:drop-shadow(1px 1px 1px rgba(255, 255, 255, 0.5)) ;
+}
+
+
+@font-face {
+    font-family: Pacifico;
+    src: url(Fonts/webfontkit-20221231-205052/pacifico-regular-webfont.woff);
+}
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+
+.menu-toggle {
+    display: none;
+    /* background-color: black; */
+    height: 20px;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    /* padding-left: 20px; */
+    margin-right: 20px;
+}
+.menu-toggle input {
+    position: absolute;
+    width: 42px;
+    height: 28px;
+    /* background-color: black; */
+    opacity: 0;
+    top: -4px;
+    left: -7px;
+    cursor: pointer;
+    z-index: 2;
+
+    /* display: none; */
+}
+.menu-toggle span {
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color: azure;
+    border-radius: 3px;
+    transition: all .5s ease-in-out;
+}
+
+.menu-toggle input:checked ~ span:nth-child(2) {
+    
+    background-color: white;
+    transform: rotate(45deg) translate(-1px, -1px);
+}
+.menu-toggle input:checked ~ span:nth-child(4) {
+    
+    background-color: white;
+    transform: rotate(-45deg) translate(-1px, 0px);
+}
+.menu-toggle input:checked ~ span:nth-child(3) {
+    opacity: 0;
+    transform: scale(0);
+}
+.menu-toggle span:nth-child(2) {
+    transform-origin: 0 0;
+}
+.menu-toggle span:nth-child(4) {
+    transform-origin: 0 100%;
+}
+
+nav ul.slide {
+    transform: translateX(0);
+    filter: opacity(1);
+}
+
+/* @media screen and (min-width: 769px) {
+    nav ul {
+        margin-right: 40px;
+        
+    }
+} */
+@media screen and (max-width: 768px) {
+    nav ul {
+        width: 50%;
+
+    }
+}
+@media screen and (max-width: 576px) {
+    .menu-toggle {
+        display: flex;
+    }
+    nav ul {
+        
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 80%;
+        height:100vh;
+        
+        
+        /* background-color: black; */
+        justify-content: space-around;
+        flex-direction: column;
+        
+        align-items: center;
+        transform: translateX(100%);
+        z-index: -1;
+        background-color: lightskyblue;
+        filter: opacity(0);
+        transition: all 1s ease-in-out;
+    }
+    
+}
+

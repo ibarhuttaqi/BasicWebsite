@@ -1,0 +1,257 @@
+/* * {
+    box-sizing: border-box;
+} */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+
+
+
+
+body {
+    font: 16px/28px arial, sans-serif;
+    background-color: lightgrey;
+    color: #333;
+    background-image: url(../../assets/herringbone.webp);
+}
+
+.topbar {
+    position: fixed;
+    height: 40px;
+    width: 100%;
+    background-color: lightskyblue;
+    top: 0;
+    right: 0;
+    z-index: 9999;
+    border-bottom: solid salmon 3px;
+
+}
+
+/* .topbar button {
+    height: 20px;
+    width: 70px;
+    margin-top: 10px;
+    text-align: center;
+    position: fixed; */
+/* } */
+/* .topbar button .signin {
+    right: 50px;
+    top: 0;
+    z-index: 99999;
+} */
+
+.topbar a {
+    text-decoration: none;
+    color: orange;
+    
+    transition: all ease-in-out 0.5s;
+}
+.topbar a:hover {
+    color: aqua;
+    background-color: aliceblue;
+    border-radius: 10px;
+    padding: 2px;
+}
+.topbar .signin {
+    position: fixed;
+    top: 5px;
+    right: 20px;
+}
+.topbar .signup {
+    position: fixed;
+    top: 5px;
+    right: 100px;
+}
+
+
+
+.container {
+    width: 960px;
+    margin: 80px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    position: relative;
+}
+
+.twitter {
+    background-image: url(../../assets/Twitter\ Ribbon-128x128.png);
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    text-indent: -99999px;
+    position: absolute;
+    top: -14px;
+    right: -90px;
+}
+
+.header {
+    padding: 20px;
+    padding-bottom: 10px;
+}
+
+.header .judul {
+    font-size: 40px;
+    font-weight: bold;
+    
+}
+
+.header ul li {
+    display: inline-block;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.header a {
+    text-decoration: none;
+    color: orange;
+    padding: 5px;
+    transition: all ease-in-out 0.5s;
+}
+
+.header a:hover {
+    color: aqua;
+    background-color: aliceblue;
+    border-radius: 10px;
+    
+}
+
+.hero {
+    height: 600px;
+    background-image: url(../../assets/christopher-gower-m_HRfLhgABo-unsplash.jpg);
+    background-size: cover;
+    /* background-position: 0 -100px; */
+    border-top: 5px solid salmon;
+    border-bottom: 5px solid lightskyblue;
+}
+
+.main {
+    width: 600px;
+    padding: 20px;
+    box-sizing: border-box;
+    float: left;
+    background-color: aliceblue;
+}
+
+.main h2 {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.main .penulis {
+    font-size: 11px;
+    margin-top: -5px;
+}
+
+.main .penulis a {
+    color: salmon;
+    text-decoration: none ;
+}
+
+.main .penulis a:hover {
+    color: rgb(0, 17, 255);
+}
+
+.main p {
+    margin: 20px;
+    font-size: 14px;
+}
+
+.footer .copy {
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-size: 11px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.cf:before,
+.cf:after {
+     content: " "; /* 1 */
+     display: table; /* 2 */
+}
+ 
+.cf:after {
+     clear: both;
+}
+ 
+ /**
+  * For IE 6/7 only
+  * Include this rule to trigger hasLayout and contain floats.
+  */
+.cf {
+     *zoom: 1;
+}
+
+
+
+.sidebar {
+    width: 300px;
+    float: right;
+    padding: 20px;
+    background-color: rgb(182, 253, 253);
+    /* opacity: 50%; */
+}
+
+.sidebar h3 {
+    font-weight: bold;
+    color: #666;
+}
+
+.sidebar img {
+    float: left;
+    width: 100px;
+    margin-right: 5px;
+}
+
+.sidebar p {
+    font-size: 12px;
+    line-height: 18px;
+}

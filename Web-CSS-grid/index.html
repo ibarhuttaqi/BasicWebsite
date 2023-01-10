@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Ibar's World</title>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="hero">
+                <h2 class="heading">Ibar's World</h2>
+                <p class="sub-heading">Japan n Anime</p>
+            </div>
+            <div class="features feature-1">
+                <h4 class="price">200k</h4>
+                <p class="item">Waifu</p>
+            </div>
+            <div class="features feature-2">
+                <h4 class="price">100k</h4>
+                <p class="item">Husbando</p>
+            </div>
+        </header>
+
+        <nav class="menu">
+            <div class="menu-toggle">
+                <input type="checkbox">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <div class="brand">
+                <h1>Ibar's World</h1>
+            </div>
+
+            <!-- ul.menu-list>li*4>a -->
+            <ul class="menu-list">
+                <li><a href="">Home</a></li>
+                <li><a href="">Products</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Gallery</a></li>
+            </ul>
+
+        </nav>
+
+        <section class="services">
+            <div class="service">
+                <div class="icon">💻</div>
+                <h3>Tutorials</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla eum velit quis saepe optio tenetur distinctio eveniet amet, voluptas, at quas ullam est maiores debitis corrupti, numquam ea enim recusandae?</p>
+            </div>
+
+            <div class="service">
+                <div class="icon">🎓</div>
+                <h3>Online Course</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla eum velit quis saepe optio tenetur distinctio eveniet amet, voluptas, at quas ullam est maiores debitis corrupti, numquam ea enim recusandae?</p>
+            </div>
+
+            <div class="service">
+                <div class="icon">🎙</div>
+                <h3>Podcast</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla eum velit quis saepe optio tenetur distinctio eveniet amet, voluptas, at quas ullam est maiores debitis corrupti, numquam ea enim recusandae?</p>
+            </div>
+
+            <div class="service">
+                <div class="icon">👕</div>
+                <h3>Merch</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla eum velit quis saepe optio tenetur distinctio eveniet amet, voluptas, at quas ullam est maiores debitis corrupti, numquam ea enim recusandae?</p>
+            </div>
+        </section>
+
+        <section class="gallery">
+            <h2>Gallery</h2>
+            <!-- img[src="https://source.unsplash.com/random/40$x40$"]*10 -->
+
+            <img src="https://source.unsplash.com/random/401x401" alt="">
+            <img src="https://source.unsplash.com/random/402x402" alt="">
+            <img src="https://source.unsplash.com/random/403x403" alt="">
+            <img src="https://source.unsplash.com/random/404x404" alt="">
+            <img src="https://source.unsplash.com/random/405x405" alt="">
+            <img src="https://source.unsplash.com/random/406x406" alt="">
+            <img src="https://source.unsplash.com/random/407x407" alt="">
+            <img src="https://source.unsplash.com/random/408x408" alt="">
+            <img src="https://source.unsplash.com/random/409x409" alt="">
+            <img src="https://source.unsplash.com/random/410x410" alt="">
+        </section>
+    </div>
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle input');
+        const nav = document.querySelector('nav ul');
+
+        menuToggle.addEventListener('click', function(){
+            nav.classList.toggle('slide');
+        })
+    </script>
+</body>
+</html>
